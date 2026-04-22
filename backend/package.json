@@ -1,0 +1,17 @@
+{
+  "name": "veda-backend",
+  "version": "1.0.0",
+  "description": "V.E.D.A System Control Backend — Local bridge for desktop app control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "V.E.D.A Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Tailwind CSS CDN with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;family=Exo+2:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'aura-dark': '#0a0a0a',
+                'aura-amber': '#f59e0b',
+                'aura-gold': '#fbbf24',
+                'aura-crimson': '#ef4444',
+              },
+              fontFamily: {
+                orbitron: ['Orbitron', 'sans-serif'],
+                exo: ['"Exo 2"', 'sans-serif'],
+              },
+              animation: {
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'spin-slow': 'spin 12s linear infinite',
+                'spin-reverse-slow': 'spin-reverse 15s linear infinite',
+                'float': 'float 6s ease-in-out infinite',
+                'glitch': 'glitch 2s infinite',
+                'liquid-morph': 'morph 8s ease-in-out infinite',
+              },
+              keyframes: {
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-20px)' },
+                },
+                'spin-reverse': {
+                  'from': { transform: 'rotate(0deg)' },
+                  'to': { transform: 'rotate(-360deg)' },
+                },
+                glitch: {
+                  '0%': { transform: 'translate(0)', opacity: '1' },
+                  '2%': { transform: 'translate(-2px, 2px)', opacity: '0.8' },
+                  '4%': { transform: 'translate(2px, -2px)', opacity: '0.9' },
+                  '6%': { transform: 'translate(0)', opacity: '1' },
+                  '100%': { transform: 'translate(0)', opacity: '1' },
+                },
+                morph: {
+                  '0%, 100%': { borderRadius: '42% 58% 70% 30% / 45% 45% 55% 55%' },
+                  '34%': { borderRadius: '70% 30% 46% 54% / 30% 29% 71% 70%' },
+                  '67%': { borderRadius: '100% 60% 60% 100% / 100% 100% 60% 60%' },
+                }
+              }
+            }
+          }
+        }
+    </script>
+    <title>V.E.D.A - Solaris AI OS</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
