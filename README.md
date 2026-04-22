@@ -12,6 +12,8 @@
   [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](#)
 </div>
 
+![V.E.D.A Interface Preview](./preview.png)
+
 ---
 
 ## 🌌 Overview
